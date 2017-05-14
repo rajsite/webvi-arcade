@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D2B201FA7D3676125D8129157A4E0F3B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F8C2A262AC495C43E4C954D2D170303E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -54,7 +54,7 @@
 			<WhileLoop Bounds="405 -350 780 410" DiagramId="314" Id="313">
 				<LoopIteration Bounds="5 380 15 15" Id="315" />
 				<LoopCondition Bounds="745 375 15 15" Id="316" />
-				<CaseStructure Bounds="15 15 741 355" DataType="@d234ba16dd1e472baced3b8223f9a564" Default="318" Id="317" Selected="539" UserSelectorBounds="276 0 188 17">
+				<CaseStructure Bounds="15 15 741 355" DataType="@d234ba16dd1e472baced3b8223f9a564" Default="318" Id="317" Selected="556" UserSelectorBounds="276 0 188 17">
 					<CaseStructure.Case Bounds="5 5 731 345" Id="556" Pattern="&quot;Prepare First Run&quot;">
 						<Wire Id="558" Joints="N(695:Out)|(720,140) N(537:556)|(727,140)" xmlns="http://www.ni.com/PlatformFramework" />
 						<DataAccessor Bounds="230 95 40 15" DataItem="59" Id="559" Label="560" xmlns="http://www.ni.com/MocCommon">
@@ -97,7 +97,7 @@
 							<p.Text>High Score</p.Text>
 						</NodeLabel>
 						<Wire Id="607" Joints="N(605:Out)|(208,200) h(5) B(1) N(603:Value)|(238,200) B(1) v(-35) N(563:Value)|(233,165)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Literal Bounds="645 135 75 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="695" p7:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+						<Literal Bounds="595 135 125 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="695" p7:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>1</p.Data>
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="WebVIArcade:ReflexTesterSubVIs:GameStates\.gtype" />
@@ -266,7 +266,7 @@
 						<NodeLabel AttachedTo="634" Bounds="615 295 75 14" Id="647" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Score History</p.Text>
 						</NodeLabel>
-						<Literal Bounds="650 135 75 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="693" p7:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+						<Literal Bounds="585 135 140 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="693" p7:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>4</p.Data>
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="WebVIArcade:ReflexTesterSubVIs:GameStates\.gtype" />
@@ -369,7 +369,7 @@
 				</NodeLabel>
 				<Wire Id="683" Joints="N(681:Out)|(180,30) N(680:time to wait)|(210,30)" xmlns="http://www.ni.com/PlatformFramework" />
 			</WhileLoop>
-			<Literal Bounds="315 -190 75 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="690" p4:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="245 -190 145 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="690" p4:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="WebVIArcade:ReflexTesterSubVIs:GameStates\.gtype" />
@@ -442,7 +442,7 @@
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="54" Name="Score" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x0</p.DefaultValue>
+			<p.DefaultValue>0xBFF0000000000000</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="59" Name="LED" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
