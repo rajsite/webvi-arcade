@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1F25CF9A4BB47F3BA0BF010D8F717BB5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="12EA253EE39441DE99AA692FBFAC8D25" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -57,7 +57,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="325 370 215 145" Id="78" Selected="79" UserSelectorBounds="64 0 88 17">
 				<CaseStructure.Case Bounds="5 5 205 135" Id="79" Pattern="True">
-					<Wire Id="99" Joints="N(89:79)|(4,70) h(11) B(1) N(105:100)|(61,70) B(1) v(-20) N(114:x)|(20,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="99" Joints="N(89:79)|(4,70) h(11) B(1) N(105:100)|(61,70) B(1) v(-20) N(117:x)|(20,50)" xmlns="http://www.ni.com/PlatformFramework" />
 					<CaseStructure Bounds="65 25 110 80" Id="100" Selected="101" UserSelectorBounds="11 0 88 17">
 						<CaseStructure.Case Bounds="5 5 100 70" Id="101" Pattern="True">
 							<MaxAndMin Bounds="40 35 30 30" Id="93">
@@ -76,10 +76,10 @@
 						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="107" Terminals="100=106, 101=111, 102=108" />
 						<CaseStructure.Tunnel Bounds="101 55 13 10" Docking="Right" Id="109" Terminals="100=110, 101=115, 102=108" />
 					</CaseStructure>
-					<Wire Id="104" Joints="N(114:x &gt;= 0?)|(50,50) N(103:100)|(61,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="104" Joints="N(117:x &gt; 0?)|(50,50) N(103:100)|(61,50)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="106" Joints="N(96:79)|(4,85) N(107:100)|(61,85)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="110" Joints="N(109:100)|(179,85) h(6) v(-15) N(91:79)|(201,70)" xmlns="http://www.ni.com/PlatformFramework" />
-					<IsGreaterOrEqualTo0 Bounds="20 35 30 30" Id="114" />
+					<IsGreaterThan0 Bounds="20 35 30 30" Id="117" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 205 135" Id="80" Pattern="False">
 					<Wire Id="90" Joints="N(89:80)|(4,70) N(91:80)|(201,70)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -89,11 +89,11 @@
 				<CaseStructure.Tunnel Bounds="206 70 13 10" Docking="Right" Id="91" Terminals="78=92, 79=110, 80=90" />
 				<CaseStructure.Tunnel Bounds="-4 85 13 10" Docking="Left" Id="96" Terminals="78=84, 79=106, 80" />
 			</CaseStructure>
-			<Wire Id="84" Joints="N(20:Value)|(255,460) h(5) B(1) N(96:78)|(321,460) B(1) v(20) N(113:x)|(280,480)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="85" Joints="N(113:x &gt;= 0?)|(310,480) N(81:78)|(321,480)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="84" Joints="N(20:Value)|(255,460) h(5) B(1) N(96:78)|(321,460) B(1) v(20) N(116:x)|(280,480)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="85" Joints="N(116:x &gt; 0?)|(310,480) N(81:78)|(321,480)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="88" Joints="N(15:Value)|(255,445) N(89:78)|(321,445)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="92" Joints="N(91:78)|(544,445) N(25:Value)|(563,445)" xmlns="http://www.ni.com/PlatformFramework" />
-			<IsGreaterOrEqualTo0 Bounds="280 465 30 30" Id="113" />
+			<IsGreaterThan0 Bounds="280 465 30 30" Id="116" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="16" Label="[UIModel]17" Left="[float]244" MinHeight="[float]24" TabIndex="[int]0" Top="[float]228" Value="{DataItemBinding Id=14}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
