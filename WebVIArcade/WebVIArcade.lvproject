@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5C8D787C132719A588F40570F4F3E820" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8F52420CA7010DEAF8C2B3536850F881" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Builders/SystemDesigner" Name="http://www.ni.com/Builders/SystemDesigner/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.49154" Version="5.0.0.49154" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/Common/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Desktop SystemDesigner Plugin" Name="http://www.ni.com/SystemDesigner/Desktop/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="SystemDesigner discovery" Name="http://www.ni.com/SystemDesigner/Discovery" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/MetaDiagram" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemDiagram" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
@@ -27,10 +30,15 @@
 						<Instance Id="627" Source="{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent">
 							<Symbols p8:Path="[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent]Process.ApplicationComponent" p9:ShowInDiagram="True" p10:Process.AliasName="WebVIArcade.gcomp" p10:Process.AssociatedIdentifier="621" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="644" Source="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop" p9:Process.HardwareAlias="Unknown" p10:Process.LinkedWhenMatched="True" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/Discovery" xmlns:p8="http://www.ni.com/Core/Proxy" />
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" p9:Process.AssociatedIdentifier="668" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="266">
 								<Superimpose Parent="{:/266}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="627" />
 							</Superimpose>
+							<Superimpose Source="644" />
 						</Superimposition>
 					</MappingManager>
 				</EnvoySuperimpositionContainer>
@@ -48,6 +56,35 @@
 						</SystemHardwareGroupDiagram>
 						<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 						<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
+					</SystemHardware>
+					<SystemHardware Bounds="485 105 315 275" Facade="PartsView" HasLayoutManager="True" Id="759" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop">
+						<SystemHardwareGroupDiagram Bounds="0 65 315 195" Id="760">
+							<SystemHardware Bounds="2 0 311 170" Facade="PartsView" Id="761" MainLabel="$aliasName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost">
+								<SystemHardwareGroupDiagram Bounds="0 5 311 115" GroupName="Ports" Id="763">
+									<SystemHardware Bounds="5 15 301 25" Facade="PartsViewLeaf" Id="764" MainLabel="$aliasName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 40 301 25" Facade="PartsViewLeaf" Id="766" MainLabel="$aliasName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 65 301 25" Facade="PartsViewLeaf" Id="768" MainLabel="$aliasName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}SerialConnector]SerialConnector">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 90 301 25" Facade="PartsViewLeaf" Id="770" MainLabel="$aliasName" SystemModelContent="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}ThunderboltConnector]ThunderboltConnector">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+								</SystemHardwareGroupDiagram>
+								<SystemHardwareGroupDiagram Bounds="0 120 311 37" GroupName="Software" Id="762" />
+								<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+								<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
+							</SystemHardware>
+						</SystemHardwareGroupDiagram>
+						<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+						<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
+						<MoveableCablingTerminal AssociatedSystemHardware="764" BackingPort="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector/ExternalPort_EthernetConnector" DataType="@a4cf1a90d66343f59a1640c5c6ea654b" Hotspot="0 95" Id="765" />
+						<MoveableCablingTerminal AssociatedSystemHardware="766" BackingPort="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector/ExternalPort_UsbConnector" DataType="@a4cf1a90d66343f59a1640c5c6ea654b" Hotspot="0 120" Id="767" />
+						<MoveableCablingTerminal AssociatedSystemHardware="768" BackingPort="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}SerialConnector]SerialConnector/ExternalPort_SerialConnector" DataType="@a4cf1a90d66343f59a1640c5c6ea654b" Hotspot="0 145" Id="769" />
+						<MoveableCablingTerminal AssociatedSystemHardware="770" BackingPort="{:/644}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}ThunderboltConnector]ThunderboltConnector/ExternalPort_ThunderboltConnector" DataType="@a4cf1a90d66343f59a1640c5c6ea654b" Hotspot="0 170" Id="771" />
 					</SystemHardware>
 				</SystemDiagramRootDiagram>
 			</SystemDiagram>
@@ -133,7 +170,7 @@
 						<WeakDefaultComponentConfigurationReference Id="606" Target="AAL_Differential_Equations\.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="607" Target="AAL_Optimization\.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="608" Target="AAL_Zeros\.gcomp" />
-						<ComponentConfigurationReferenceDependencySource Id="632" Target="WebVIArcade\.gcomp:Configuration1" />
+						<ComponentConfigurationReferenceDependencySource Id="805" Target="WebVIArcade\.gcomp:Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,EmbeddedReference,{http://www.ni.com/PlatformFramework}ByReferenceRoot" Id="278" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -176,6 +213,132 @@
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
 				</EmbeddedDefinitionReference>
 				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="364" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+				</EmbeddedDefinitionReference>
+			</NameScopingEnvoy>
+			<NameScopingEnvoy Bindings="Envoy,DefinitionReference,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel,SystemDiagramEnumerateTargetService,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,AnyTarget,ContentKind_{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DesktopHost,InProcessNativeDesktopTarget,NativeTarget,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="668" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel" Name="PC">
+				<SystemDiagramTarget xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+				<NameScopingEnvoy Bindings="NativeViLibBindingKeyword,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="669" ModelDefinitionType="BuildSpecification" Name="Interactive">
+					<BuildSpecificationDefinition Id="670" TopLevelComponentRefId="758" xmlns="http://www.ni.com/GComponent.xsd">
+						<CompilerSymbolTable Id="671" xmlns="http://www.ni.com/PlatformFramework" />
+						<WeakDefaultComponentConfigurationReference Id="674" Target="AAL_Conditioning\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="675" Target="AAL_Fitting\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="676" Target="AAL_Formula\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="677" Target="AAL_Generation\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="678" Target="AAL_Geometry\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="679" Target="AAL_Integral_Differentiation\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="680" Target="AAL_Interpolation\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="681" Target="AAL_Linear_Algebra\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="682" Target="AAL_Matrix\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="683" Target="AAL_Measurement\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="684" Target="AAL_Operations\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="685" Target="AAL_Polynomial\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="686" Target="AAL_Probability\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="687" Target="AAL_Resampling\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="688" Target="AAL_SML\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="689" Target="AAL_Statistics\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="690" Target="AAL_Support\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="691" Target="AAL_Transforms\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="692" Target="AAL_Windows\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="693" Target="AAL_Filtering\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="694" Target="AAL_BLAS\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="695" Target="AAL_Special_Func\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="696" Target="AAL_Differential_Equations\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="697" Target="AAL_Optimization\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="698" Target="AAL_Zeros\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="700" Target="AAL_Conditioning_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="701" Target="AAL_Filtering_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="702" Target="AAL_Fitting_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="703" Target="AAL_Generation_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="704" Target="AAL_Interpolation_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="705" Target="AAL_Linear_Algebra_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="706" Target="AAL_Measurement_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="707" Target="AAL_Operations_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="708" Target="AAL_Resampling_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="709" Target="AAL_Statistics_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="710" Target="AAL_Support_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="711" Target="AAL_Transforms_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="712" Target="AAL_Windows_Base\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="714" Target="Control_Controller\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="715" Target="Control_DesignPID\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="716" Target="Control_Linear\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="717" Target="Control_Nonlinear\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="718" Target="Control_PIDGain\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="719" Target="Control_SignalGeneration\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="720" Target="Control_Conversion\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="722" Target="NI\.HTTP\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="724" Target="NI\.G\ Core\.Configuration\ File\ \(INI\)\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="725" Target="NI\.G\ Core\.Data\ Type\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="726" Target="NI\.G\ Core\.Error\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="727" Target="NI\.G\ Core\.File\ IO\ \(General\)\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="728" Target="NI\.G\ Core\.Input\ Devices\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="729" Target="NI\.G\ Core\.Libraries\ and\ Executables\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="730" Target="NI\.G\ Core\.Numeric\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="731" Target="NI\.G\ Core\.Operating\ System\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="732" Target="NI\.G\ Core\.Registry\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="733" Target="NI\.G\ Core\.Rendezvous\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="734" Target="NI\.G\ Core\.Semaphore\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="735" Target="NI\.G\ Core\.SMTP\ Email\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="736" Target="NI\.G\ Core\.Sound\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="737" Target="NI\.G\ Core\.Strings\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="738" Target="NI\.G\ Core\.TCP\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="739" Target="NI\.G\ Core\.TDMS\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="740" Target="NI\.G\ Core\.Timed\ Loop\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="741" Target="NI\.G\ Core\.Timing\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="742" Target="NI\.G\ Core\.URL\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="743" Target="NI\.G\ Core\.Waveform\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="744" Target="NI\.G\ Core\.Zip\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="745" Target="NI\.G\ Core\.Localization\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="746" Target="NI\.G\ Core\.User\ Interface\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="747" Target="NI\.G\ Core\.Data\ Communications\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="748" Target="NI\.G\ Core\.Color\ Picker\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="750" Target="NI\.RT\.Shared\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="751" Target="NI\.RT\.SMP\ CPU\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="752" Target="NI\.RT\.Trace\ Tool\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="753" Target="NI\.RT\.Utility\.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="754" Target="NI\.RT\.Watchdog\ Timer\.gcomp" />
+						<ComponentConfigurationReference AssociatedEnvoyId="755" ConfigName="Default" Id="758" />
+					</BuildSpecificationDefinition>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,EmbeddedReference,{http://www.ni.com/PlatformFramework}ByReferenceRoot" Id="672" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+						<PackageReferencesDefinition />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="673" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-analysis\-advanced\-src\-1\.0\.4\.6\.niaddon" StoragePath="ref://NI/analysis/advanced-src/1.0.4.6" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="699" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-analysis\-basic\-src\-1\.0\.4\.5\.niaddon" StoragePath="ref://NI/analysis/basic-src/1.0.4.5" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="713" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-analysis\-control\-src\-1\.0\.4\.4\.niaddon" StoragePath="ref://NI/analysis/control-src/1.0.4.4" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="721" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-G\-http\-src\-1\.0\.0\.5\.niaddon" StoragePath="ref://NI/G/http-src/1.0.0.5" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="723" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-G\-stdlib\-src\-1\.0\.3\.13\.niaddon" StoragePath="ref://NI/G/stdlib-src/1.0.3.13" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,PackageInterfaceDefinition,FileReference,SourceFileReference,EnvoyManager" Id="749" ModelDefinitionType="PackageInterfaceDefinition" Name="NI\-rt\-rtlib\-src\-1\.0\.0\.10\.niaddon" StoragePath="ref://NI/rt/rtlib-src/1.0.0.10" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,ComponentBaseType_Library" Id="755" ModelDefinitionType="SparseEnvoyManager" Name="Default\ Component" Reparentable="False">
+						<SparseEnvoyManager Id="756">
+							<SparseEnvoyManagerDependencySource Id="757" Target=":NullTarget:Default\ Component" />
+						</SparseEnvoyManager>
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference,RcxRepositoryManagerDefinition" Id="776" ModelDefinitionType="RepositoryManagerDefinition" Name="rcx\.lib" Reparentable="False">
+						<RepositoryManagerDefinition Location="" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="777" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Fpga" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="778" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="779" ModelDefinitionType="RepositoryManagerDefinition" Name="instr\.lib" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="780" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+					</EmbeddedDefinitionReference>
+				</NameScopingEnvoy>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="772" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Fpga" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="773" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="774" ModelDefinitionType="RepositoryManagerDefinition" Name="instr\.lib" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="775" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 				</EmbeddedDefinitionReference>
 			</NameScopingEnvoy>
@@ -225,4 +388,9 @@
 	<ProjectInformation Author="" ProjectIconFilename="Blank Project.png" xmlns="http://www.ni.com/PlatformFramework">
 		<p.Description></p.Description>
 	</ProjectInformation>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="a4cf1a90d66343f59a1640c5c6ea654b">
+			<Composite Id="1" Name="SystemDiagramCable" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
 </SourceFile>
