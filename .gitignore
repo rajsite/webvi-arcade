@@ -1,0 +1,4 @@
+.cache/
+*.lvcodedb
+*.lvcompile
+Builds/
