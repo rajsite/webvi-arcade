@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C3F9846119F288F1DA10B0E2884E9722" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="59869B60118A87016F0DA28133127768" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -41,12 +41,6 @@
 			</DataAccessor>
 			<NodeLabel AttachedTo="625" Bounds="-35 0 30 15" Id="632" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Tab</p.Text>
-			</NodeLabel>
-			<DataAccessor Bounds="0 0 40 15" DataItem="652" Id="653" Label="656">
-				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="653" Bounds="45 0 30 15" Id="656" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Power Button_2</p.Text>
 			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
@@ -136,32 +130,25 @@
 						</Literal>
 					</CaseStructure.Case>
 					<CaseStructure.Case Bounds="5 5 731 345" Id="319" Pattern="&quot;Prepare Tester&quot;">
-						<DataAccessor Bounds="225 105 40 15" DataItem="32" Id="275" Label="276" xmlns="http://www.ni.com/MocCommon">
-							<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-						</DataAccessor>
-						<Literal Bounds="185 105 25 15" DataType="Boolean" Facade="False Constant" Id="277" Label="278" xmlns="http://www.ni.com/MocCommon">
+						<Literal Bounds="195 80 25 15" DataType="Boolean" Facade="False Constant" Id="277" Label="278" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>False</p.Data>
 							<BooleanBehavior />
 						</Literal>
-						<Wire Id="279" Joints="N(277:Out)|(210,110) h(5) B(1) N(275:Value)|(228,110) B(1) v(-25) N(594:Value)|(228,85)" xmlns="http://www.ni.com/PlatformFramework" />
 						<DataAccessor Bounds="233 145 40 15" DataItem="54" Id="304" Label="305" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
-						<Literal Bounds="166 145 40 15" DataType="Double" Facade="Numeric" Id="306" Label="307" xmlns="http://www.ni.com/MocCommon">
+						<Literal Bounds="190 145 40 15" DataType="Double" Facade="Numeric" Id="306" Label="307" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>0x0</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
-						<Wire Id="308" Joints="N(306:Out)|(206,150) N(304:Value)|(236,150)" xmlns="http://www.ni.com/PlatformFramework" />
-						<NodeLabel AttachedTo="275" Bounds="270 105 74 14" Id="276" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>Power Button</p.Text>
-						</NodeLabel>
-						<NodeLabel AttachedTo="277" Bounds="185 87 30 15" Id="278" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<Wire Id="308" Joints="N(306:Out)|(230,150) N(304:Value)|(236,150)" xmlns="http://www.ni.com/PlatformFramework" />
+						<NodeLabel AttachedTo="277" Bounds="195 62 30 15" Id="278" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Power Button</p.Text>
 						</NodeLabel>
 						<NodeLabel AttachedTo="304" Bounds="278 145 32 14" Id="305" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Score</p.Text>
 						</NodeLabel>
-						<NodeLabel AttachedTo="306" Bounds="166 127 30 15" Id="307" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<NodeLabel AttachedTo="306" Bounds="190 127 30 15" Id="307" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Score</p.Text>
 						</NodeLabel>
 						<Wire Id="545" Joints="N(692:Out)|(720,140) N(537:319)|(727,140)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -178,11 +165,12 @@
 							</p7:p.TypeDefinitionTargets>
 							<EnumBehavior />
 						</Literal>
+						<Wire Id="702" Joints="N(277:Out)|(220,85) N(594:Value)|(228,85)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Case Bounds="5 5 731 345" Id="539" Pattern="&quot;Run Tester&quot;">
 						<WhileLoop Bounds="160 50 287 265" DiagramId="16" Id="15">
 							<LoopIteration Bounds="5 235 15 15" Id="17" />
-							<LoopCondition Bounds="220 215 15 15" Id="18" />
+							<LoopCondition Bounds="220 215 15 15" Id="18" LoopConditionMode="ContinueIfTrue" />
 							<Subtract Bounds="70 50 30 30" Id="87" />
 							<TickCount Bounds="15 25 40 40" Id="88" />
 							<Wire Id="89" Joints="N(88:timer value)|(55,45) h(10) v(10) N(87:x)|(70,55)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -329,46 +317,6 @@
 				<LeftShiftRegister Bounds="-4 160 13 10" Docking="Left" Id="325" RightRegister="324" Terminals="o0=533, i0=534" />
 			</WhileLoop>
 			<Wire Id="533" Joints="N(690:Out)|(390,-185) N(325:o0)|(401,-185)" xmlns="http://www.ni.com/PlatformFramework" />
-			<WhileLoop Bounds="400 85 290 130" DiagramId="666" Id="665">
-				<LoopIteration Bounds="50 65 15 15" Id="667" />
-				<LoopCondition Bounds="260 100 15 15" Id="668" />
-				<DataAccessor Bounds="175 65 40 15" DataItem="660" Id="661" Label="662" xmlns="http://www.ni.com/MocCommon">
-					<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-				</DataAccessor>
-				<NodeLabel AttachedTo="661" Bounds="220 65 36 14" Id="662" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>LED_2</p.Text>
-				</NodeLabel>
-				<QuotientAndRemainder Bounds="95 65 30 30" Id="669" />
-				<Wire Id="670" Joints="N(667:Output)|(65,70) N(669:x)|(95,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Literal Bounds="40 90 40 15" DataType="Int32" Facade="Numeric" Id="671" Label="672" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>2</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="671" Bounds="40 72 30 15" Id="672" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>y</p.Text>
-				</NodeLabel>
-				<Wire Id="673" Joints="N(671:Out)|(80,95) h(5) v(-10) N(669:y)|(95,85)" xmlns="http://www.ni.com/PlatformFramework" />
-				<IsEqualTo0 Bounds="135 55 30 30" Id="674" />
-				<Wire Id="675" Joints="N(669:x-y*floor(x/y\))|(125,70) N(674:x)|(135,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="676" Joints="N(674:x = 0?)|(165,70) N(661:Value)|(178,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Literal Bounds="225 100 25 15" DataType="Boolean" Facade="False Constant" Id="677" Label="678" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>False</p.Data>
-					<BooleanBehavior />
-				</Literal>
-				<NodeLabel AttachedTo="677" Bounds="225 82 30 15" Id="678" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>stop</p.Text>
-				</NodeLabel>
-				<Wire Id="679" Joints="N(677:Out)|(250,105) N(668:Input)|(260,105)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wait Bounds="210 10 40 40" Id="680" />
-				<Literal Bounds="135 25 45 15" DataType="UInt32" Facade="Numeric" Id="681" Label="682" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>500</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="681" Bounds="135 7 30 15" Id="682" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>milliseconds to wait</p.Text>
-				</NodeLabel>
-				<Wire Id="683" Joints="N(681:Out)|(180,30) N(680:time to wait)|(210,30)" xmlns="http://www.ni.com/PlatformFramework" />
-			</WhileLoop>
 			<Literal Bounds="245 -190 145 15" DataType="@d234ba16dd1e472baced3b8223f9a564" Facade="Enum" Id="690" p4:ControlDefinitionChecksum="LHsSBMD6GHJBodcmns2vfQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
 				<p4:p.TypeDefinitionTargets>
@@ -387,7 +335,7 @@
 						<HtmlLabel Height="[float]32" Id="53" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]51" Left="[float]214" Text="[string]Score" Top="[float]0" Width="[float]59">
 							<FontSetting FontFamily="Segoe UI" FontSize="18" Id="57" xmlns="http://www.ni.com/PlatformFramework" />
 						</HtmlLabel>
-						<HtmlBooleanSwitch BaseName="[string]Power Button" ClickMode="[ClickMode]Press" Height="[float]200" Id="34" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]35" Left="[float]61" MinHeight="[float]20" MinWidth="[float]20" Shape="[SwitchShape]Power" TabIndex="[int]1" Top="[float]244" Value="{DataItemBinding Id=32}" Width="[float]200" />
+						<HtmlBooleanSwitch BaseName="[string]Power Button" ClickMode="[ClickMode]Release" Height="[float]200" Id="34" IncludeInCapture="[bool]False" IsMomentary="[bool]True" Label="[UIModel]35" Left="[float]61" MinHeight="[float]20" MinWidth="[float]20" Shape="[SwitchShape]Power" TabIndex="[int]1" Top="[float]244" Value="{DataItemBinding Id=32}" Width="[float]200" />
 						<HtmlLabel Height="[float]16" Id="35" LabelOwner="[UIModel]34" Left="[float]61" Text="[string]Power Button" Top="[float]224" Visible="[bool]False" Width="[float]72" />
 						<HtmlNumericText BaseName="[string]Numeric" Height="[float]40" Id="598" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]600" Left="[float]5" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]2" Top="[float]36" Value="{DataItemBinding Id=602}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]152">
 							<FontSetting FontFamily="Segoe UI" FontSize="20" Id="599" xmlns="http://www.ni.com/PlatformFramework" />
@@ -395,7 +343,7 @@
 						<HtmlLabel Height="[float]32" Id="600" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]598" Left="[float]23" Text="[string]High Score" Top="[float]0" Width="[float]116">
 							<FontSetting FontFamily="Segoe UI" FontSize="18" Id="601" xmlns="http://www.ni.com/PlatformFramework" />
 						</HtmlLabel>
-						<HtmlBooleanLED BaseName="[string]LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Press power and wait..." Height="[float]156" Highlight="[SMSolidColorBrush]#ffb599d9" Id="61" IsReadOnly="[bool]True" Label="[UIModel]62" Left="[float]5" MinHeight="[float]21.32" MinWidth="[float]172.299988" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]84" TrueContent="[string]CLICK NOW!" Value="{DataItemBinding Id=59}" Width="[float]311">
+						<HtmlBooleanLED BaseName="[string]LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Press and hold power..." Height="[float]156" Highlight="[SMSolidColorBrush]#ffb599d9" Id="61" IsReadOnly="[bool]True" Label="[UIModel]62" Left="[float]5" MinHeight="[float]21.32" MinWidth="[float]175.973328" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]84" TrueContent="[string]RELEASE POWER NOW!" Value="{DataItemBinding Id=59}" Width="[float]311">
 							<FontSetting FontFamily="Segoe UI" FontSize="12" FontStyle="Bold" Id="696" xmlns="http://www.ni.com/PlatformFramework" />
 						</HtmlBooleanLED>
 						<HtmlLabel Height="[float]16" Id="62" LabelOwner="[UIModel]61" Left="[float]5" Text="[string]LED" Top="[float]64" Visible="[bool]False" Width="[float]21" />
@@ -421,19 +369,6 @@
 						<HtmlLabel Height="[float]16" Id="646" LabelOwner="[UIModel]635" Left="[float]4" Text="[string]Score History" Top="[float]-16" Visible="[bool]False" Width="[float]71" />
 					</HtmlLayoutPanel>
 				</HtmlTabItem>
-				<HtmlTabItem Header="[string]Instructions" Id="649" Left="[float]0" TabIndex="[int]1" Top="[float]0">
-					<HtmlLayoutPanel Height="[float]449" Id="650" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]320">
-						<HtmlText BaseName="[string]Text" Height="[float]24" Id="651" Left="[float]16" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Press the power button in the game to start" TextWrapping="[TextWrapping]Wrap" Top="[float]20" Width="[float]264">
-							<FontSetting FontFamily="Segoe UI" FontSize="10" Id="664" xmlns="http://www.ni.com/PlatformFramework" />
-						</HtmlText>
-						<HtmlBooleanSwitch BaseName="[string]Power Button" Height="[float]72" Id="654" IncludeInCapture="[bool]False" IsReadOnly="[bool]True" Label="[UIModel]655" Left="[float]20" MinHeight="[float]20" MinWidth="[float]20" Shape="[SwitchShape]Power" TabIndex="[int]0" Top="[float]68" Value="{DataItemBinding Id=652}" Width="[float]72" />
-						<HtmlLabel Height="[float]16" Id="655" LabelOwner="[UIModel]654" Left="[float]20" Text="[string]Power Button_2" Top="[float]48" Visible="[bool]False" Width="[float]83" />
-						<HtmlText BaseName="[string]Text" Height="[float]16" Id="657" Left="[float]97" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Eventually the LED will change colors..." TextWrapping="[TextWrapping]Wrap" Top="[float]164" Width="[float]203" />
-						<HtmlBooleanLED BaseName="[string]LED" FalseContent="[string]Off" Height="[float]56" Highlight="[SMSolidColorBrush]#ffb599d9" Id="658" IsReadOnly="[bool]True" Label="[UIModel]659" Left="[float]180" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=660}" Width="[float]120" />
-						<HtmlLabel Height="[float]16" Id="659" LabelOwner="[UIModel]658" Left="[float]180" Text="[string]LED_2" Top="[float]192" Visible="[bool]False" Width="[float]32" />
-						<HtmlText BaseName="[string]Text" Height="[float]16" Id="663" Left="[float]4" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Press the power button again as fast as you can to score!" TextWrapping="[TextWrapping]Wrap" Top="[float]308" Width="[float]301" />
-					</HtmlLayoutPanel>
-				</HtmlTabItem>
 			</HtmlTabControl>
 			<HtmlLabel Height="[float]16" Id="631" LabelOwner="[UIModel]626" Left="[float]0" Text="[string]Tab" Top="[float]-20" Visible="[bool]False" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
@@ -453,12 +388,6 @@
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" BufferSize="1024" DataType="Double" Id="633" Name="Score History" xmlns="http://www.ni.com/MocCommon" />
-		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="652" Name="Power Button_2" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>False</p.DefaultValue>
-		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="660" Name="LED_2" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>False</p.DefaultValue>
-		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="d234ba16dd1e472baced3b8223f9a564">
