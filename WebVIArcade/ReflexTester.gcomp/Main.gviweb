@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="16DCCD1E2F7D8A84AC577A4F1CF04E69" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2A79350D65EB5068DAB3A45CEA589934" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.0.0.1" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
@@ -54,7 +54,7 @@
 			<WhileLoop Bounds="405 -350 780 410" DiagramId="314" Id="313">
 				<LoopIteration Bounds="5 380 15 15" Id="315" />
 				<LoopCondition Bounds="745 375 15 15" Id="316" />
-				<CaseStructure Bounds="15 15 741 355" DataType="@7c09f5aa6ea34ee0987870713a17ab6d" Default="318" Id="317" Selected="556" UserSelectorBounds="276 0 188 17">
+				<CaseStructure Bounds="15 15 741 355" DataType="@7c09f5aa6ea34ee0987870713a17ab6d" Default="318" Id="317" Selected="539" UserSelectorBounds="276 0 188 17">
 					<CaseStructure.Case Bounds="5 5 731 345" Id="556" Pattern="&quot;Prepare First Run&quot;">
 						<Wire Id="558" Joints="N(585:Out)|(720,140) N(537:556)|(727,140)" xmlns="http://www.ni.com/PlatformFramework" />
 						<DataAccessor Bounds="230 95 40 15" DataItem="59" Id="559" Label="560" xmlns="http://www.ni.com/MocCommon">
@@ -270,8 +270,8 @@
 						<DataAccessor Bounds="570 295 40 15" DataItem="633" Id="634" Label="647" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
-						<NodeLabel AttachedTo="634" Bounds="615 295 73 14" Id="647" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>score History</p.Text>
+						<NodeLabel AttachedTo="634" Bounds="615 295 75 14" Id="647" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Score History</p.Text>
 						</NodeLabel>
 					</CaseStructure.Case>
 					<CaseStructure.Case Bounds="5 5 731 345" Id="540" Pattern="&quot;Clean-up Tester&quot;">
@@ -419,7 +419,7 @@
 						<HtmlPlotLegend Graph="[UIModel]635" Height="[float]28" Id="643" Left="[float]303" MinWidth="[float]145" Top="[float]6" Visible="[bool]False" Width="[float]145" />
 						<HtmlCursorLegend Graph="[UIModel]635" Height="[float]202" Id="644" Left="[float]8" MinWidth="[float]320" Top="[float]381" Visible="[bool]False" Width="[float]320" />
 						<HtmlGraphTools Graph="[UIModel]635" Height="[float]30" Id="645" Left="[float]10" Top="[float]8" Visible="[bool]False" Width="[float]120" />
-						<HtmlLabel Height="[float]16" Id="646" LabelOwner="[UIModel]635" Left="[float]8" Text="[string]score History" Top="[float]-14" Visible="[bool]False" Width="[float]69" />
+						<HtmlLabel Height="[float]16" Id="646" LabelOwner="[UIModel]635" Left="[float]8" Text="[string]Score History" Top="[float]-14" Visible="[bool]False" Width="[float]71" />
 					</HtmlLayoutPanel>
 				</HtmlTabItem>
 				<HtmlTabItem Header="[string]Instructions" Id="649" Left="[float]0" TabIndex="[int]1" Top="[float]0">
@@ -453,7 +453,7 @@
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="624" Name="Tab" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" BufferSize="1024" DataType="Double" Id="633" Name="score History" xmlns="http://www.ni.com/MocCommon" />
+		<DataItem AdaptToDiagramType="True" BufferSize="1024" DataType="Double" Id="633" Name="Score History" xmlns="http://www.ni.com/MocCommon" />
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="652" Name="Power Button_2" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
