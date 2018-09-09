@@ -2,3 +2,4 @@
 *.lvcodedb
 *.lvcompile
 Builds/
+.gitignore.master
