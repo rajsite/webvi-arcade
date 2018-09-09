@@ -1,60 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7DA8D9C2AD020B7D9A5219C43EEF9AA5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CA5E354938FB26FEC481889543F14BEE" Timestamp="1D448775C6A72B5" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Html VI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.0.0.49154" Version="5.0.0.49154" />
-		<ParsableNamespace AssemblyFileVersion="5.0.1.2897" FeatureSetName="Web Server Compiler" Name="http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.1.49152" />
-		<ApplicationVersionInfo Build="5.0.1.2897" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.3.1.49938" Name="LabVIEW NXG" Version="2.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition AutoIncrementOnBuild="False" DefaultConfigurationName="Configuration1" Id="1" RootNamespaceId="30" UserVersion="0.0.0.11" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="1" RootNamespaceId="30" UserVersion="0.0.0.11" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
 		<ComponentConfiguration ComponentOutputType="WebApplication" Id="10" Name="Configuration1">
 			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
-			<ComponentItemProperties AssociatedEnvoyId="15" Id="16" TopLevel="True" p4:WebApplicationDistributionTypeHtmlFileName="index.html" xmlns:p4="http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel" />
-			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="26" Id="28" />
-			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="25" Id="27" />
-			<ComponentItemProperties AssociatedEnvoyId="31" Id="32" TopLevel="True" p4:WebApplicationDistributionTypeHtmlFileName="index.html" xmlns:p4="http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel" />
 			<WebApplicationOutputTypeProperties Id="33" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
+			<ComponentItemProperties AssociatedEnvoyId="36" Id="38" TopLevel="True" />
+			<ComponentItemProperties AssociatedEnvoyId="37" Id="39" TopLevel="True" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
-		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
+		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="30" Name="WebVIArcade">
-				<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="17" Name="ReflexTester">
-					<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="34" Name="SubVIs">
-						<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="23" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="GameStates\.gtype" StoragePath="ReflexTester\SubVIs\GameStates.gtype\GameStates.gtype" />
-						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="29" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DetermineHighScore\.gvi" StoragePath="ReflexTester\SubVIs\DetermineHighScore.gvi" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="30" Name="WebVIArcade">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="17" Name="ReflexTester">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="34" Name="SubVIs">
+						<SourceFileReference Bindings="EnvoyManager" Id="23" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="GameStates\.gtype" StoragePath="ReflexTester\SubVIs\GameStates.gtype\GameStates.gtype" />
+						<SourceFileReference Id="29" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DetermineHighScore\.gvi" StoragePath="ReflexTester\SubVIs\DetermineHighScore.gvi" />
 					</NameScopingEnvoy>
-					<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Main\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="ReflexTester\Main.gviweb" />
+					<SourceFileReference Id="37" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="ReflexTester\index.gviweb" />
 				</NameScopingEnvoy>
-				<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="18" Name="SharedResources">
-					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType,ProjectItemDragDropDefaultService,EmbeddedReference" Id="25" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="WebVICenter\.css">
-						<ExternalFile>
-							<p.StoragePath>"SharedResources\\WebVICenter.css"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType,ProjectItemDragDropDefaultService,EmbeddedReference" Id="26" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="WebVICenter\.js">
-						<ExternalFile>
-							<p.StoragePath>"SharedResources\\WebVICenter.js"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-				</NameScopingEnvoy>
-				<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="35" Name="FlappyScope">
-					<SourceFileReference Bindings="{http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI}HtmlVICompilerService,NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="31" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Main\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="FlappyScope\Main.gviweb" />
-				</NameScopingEnvoy>
+				<SourceFileReference Id="36" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="index.gviweb" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
-		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="WebVIArcade\.gcomp" NameTracksFileName="True">
+		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="WebVIArcade\.gcomp" NameTracksFileName="True">
 			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.ComponentEditor.SourceModel.ComponentConfiguration" ContentIdentifier="10" Id="13" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+			<ContentReference ContentIdentifier="10" Id="13" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 </SourceFile>
