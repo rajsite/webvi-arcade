@@ -1,0 +1,20 @@
+{
+  "name": "webvi-arcade",
+  "version": "1.0.0",
+  "description": "[![WebVI Arcade Demo Link](Screenshots/ReflexTester.gif)](https://bit.ly/webvidemo1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gh-pages": "git branch -d gh-pages && git checkout --orphan gh-pages && ren .gitignore .gitignore.master && ren .gitignore.gh-pages .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajsite/webvi-arcade.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajsite/webvi-arcade/issues"
+  },
+  "homepage": "https://github.com/rajsite/webvi-arcade#readme"
+}
