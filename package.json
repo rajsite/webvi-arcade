@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gh-pages": "git branch -d gh-pages && git checkout --orphan gh-pages && ren .gitignore .gitignore.master && ren .gitignore.gh-pages .gitignore && git reset"
+    "gh-pages": "git branch -d gh-pages && git checkout --orphan gh-pages && del .gitignore && ren .gitignore.gh-pages .gitignore && git reset && git add WebVIArcade && git commit -m \"Build gh-pages\"",
+    "gh-pages-publish": "git push --force --set-upstream origin gh-pages"
   },
   "repository": {
     "type": "git",
