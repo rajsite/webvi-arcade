@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CA5E354938FB26FEC481889543F14BEE" Timestamp="1D448775C6A72B5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C5EF44B5A76CE2F13A99D38C1EADD4C1" Timestamp="1D448C7DDCBEFA0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
@@ -18,6 +18,7 @@
 			<WebApplicationOutputTypeProperties Id="33" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
 			<ComponentItemProperties AssociatedEnvoyId="36" Id="38" TopLevel="True" />
 			<ComponentItemProperties AssociatedEnvoyId="37" Id="39" TopLevel="True" />
+			<ComponentItemProperties AssociatedEnvoyId="41" Id="73" TopLevel="True" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
@@ -33,6 +34,31 @@
 					<SourceFileReference Id="37" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="ReflexTester\index.gviweb" />
 				</NameScopingEnvoy>
 				<SourceFileReference Id="36" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="index.gviweb" />
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="40" Name="Snake">
+					<SourceFileReference Id="41" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="index\.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Snake\index.gviweb" />
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="43" Name="SubVIs">
+						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="45" Name="Entity\ Components">
+							<SourceFileReference Bindings="EnvoyManager" Id="46" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Position\.gtype" StoragePath="Snake\SubVIs\Entity Components\Position.gtype\Position.gtype" />
+							<SourceFileReference Bindings="EnvoyManager" Id="60" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Edible\.gtype" StoragePath="Snake\SubVIs\Entity Components\Edible.gtype\Edible.gtype" />
+							<SourceFileReference Bindings="EnvoyManager" Id="61" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Snake\ Head\.gtype" StoragePath="Snake\SubVIs\Entity Components\Snake Head.gtype\Snake Head.gtype" />
+							<SourceFileReference Bindings="EnvoyManager" Id="62" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Snake\ Body\.gtype" StoragePath="Snake\SubVIs\Entity Components\Snake Body.gtype\Snake Body.gtype" />
+							<SourceFileReference Bindings="EnvoyManager" Id="63" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Direction\.gtype" StoragePath="Snake\SubVIs\Entity Components\Direction.gtype\Direction.gtype" />
+							<SourceFileReference Id="68" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Direction\ Get\.gvi" StoragePath="Snake\SubVIs\Entity Components\Direction Get.gvi" />
+							<SourceFileReference Id="69" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Direction\ Set\.gvi" StoragePath="Snake\SubVIs\Entity Components\Direction Set.gvi" />
+							<SourceFileReference Id="70" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Position\ Get\.gvi" StoragePath="Snake\SubVIs\Entity Components\Position Get.gvi" />
+							<SourceFileReference Id="71" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Position\ Set\.gvi" StoragePath="Snake\SubVIs\Entity Components\Position Set.gvi" />
+							<SourceFileReference Id="75" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Direction\ Show\.gvi" StoragePath="Snake\SubVIs\Entity Components\Direction Show.gvi" />
+						</NameScopingEnvoy>
+						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="51" Name="Game\ State">
+							<SourceFileReference Bindings="EnvoyManager" Id="53" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Game\ State\.gtype" StoragePath="Snake\SubVIs\Game State\Game State.gtype\Game State.gtype" />
+							<SourceFileReference Bindings="EnvoyManager" Id="65" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Entity\.gtype" StoragePath="Snake\SubVIs\Game State\Entity.gtype\Entity.gtype" />
+							<SourceFileReference Id="72" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Snake\ Head\ Index\.gvi" StoragePath="Snake\SubVIs\Game State\Snake Head Index.gvi" />
+						</NameScopingEnvoy>
+						<SourceFileReference Id="59" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Initialize\.gvi" StoragePath="Snake\SubVIs\Initialize.gvi" />
+						<SourceFileReference Id="66" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Snake\ Move\ System\.gvi" StoragePath="Snake\SubVIs\Snake Move System.gvi" />
+						<SourceFileReference Id="76" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Render\ System\.gvi" StoragePath="Snake\SubVIs\Render System.gvi" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="WebVIArcade\.gcomp" NameTracksFileName="True">
