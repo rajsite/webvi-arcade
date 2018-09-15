@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="090F3D0D87435C89EE9E3B6F1C080726" Timestamp="1D44CB95DEB1F56" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="04DDFD36CD9C97B892F0B602C6754AF5" Timestamp="1D44D41CCF528F3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
@@ -52,6 +52,8 @@
 						<SourceFileReference Bindings="EnvoyManager" Id="85" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Position\.gtype" StoragePath="Snake\Entity Components\Position.gtype\Position.gtype" />
 						<SourceFileReference Bindings="EnvoyManager" Id="86" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Snake\ Body\.gtype" StoragePath="Snake\Entity Components\Snake Body.gtype\Snake Body.gtype" />
 						<SourceFileReference Bindings="EnvoyManager" Id="87" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Snake\ Head\.gtype" StoragePath="Snake\Entity Components\Snake Head.gtype\Snake Head.gtype" />
+						<SourceFileReference Id="99" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Snake\ Head\ Get\.gvi" StoragePath="Snake\Entity Components\Snake Head Get.gvi" />
+						<SourceFileReference Id="100" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Snake\ Head\ Set\.gvi" StoragePath="Snake\Entity Components\Snake Head Set.gvi" />
 					</NameScopingEnvoy>
 					<SourceFileReference Bindings="EnvoyManager" Id="89" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Entity\.gtype" StoragePath="Snake\Entity.gtype\Entity.gtype" />
 					<SourceFileReference Bindings="EnvoyManager" Id="90" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Game\ State\.gtype" StoragePath="Snake\Game State.gtype\Game State.gtype" />

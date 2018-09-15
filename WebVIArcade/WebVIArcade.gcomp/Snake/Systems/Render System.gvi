@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="31ED55E99AB56DFE7C346900A949132E" Timestamp="1D44CB79E567423" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="03794127E29FA6EEEAD49F393F834629" Timestamp="1D44D454C7A0E78" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -36,7 +36,7 @@
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
-			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4597d6c396c0470097404ce30e84df81" Height="[float]654" Id="49" IsTabStop="[bool]True" Label="[UIModel]309" Left="[float]397" TabIndex="[int]0" Top="[float]335" Value="{DataItemBinding Id=48}" Width="[float]390" p4:ControlDefinitionChecksum="8j0b2hkx0M0occvO8v6eHA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1729b352ebc44728b2d60d05ea2629a4" Height="[float]654" Id="49" IsTabStop="[bool]True" Label="[UIModel]309" Left="[float]397" TabIndex="[int]0" Top="[float]335" Value="{DataItemBinding Id=48}" Width="[float]390" p4:ControlDefinitionChecksum="8j0b2hkx0M0occvO8v6eHA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="WebVIArcade:Snake:Game\ State\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -50,7 +50,7 @@
 							<Field5>null</Field5>
 						</Cluster>
 					</p.DefaultElementValue>
-					<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@97319663fc254274b66b5d394ae782f5" Height="[float]497" Id="275" IsTabStop="[bool]True" Label="[UIModel]290" TabIndex="[int]0" Width="[float]303" p4:ControlDefinitionChecksum="ouzrsUhXDI5ReTSXQIyGEQ==">
+					<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@c115c60ffc304b5ba6d8a44a9409a789" Height="[float]497" Id="275" IsTabStop="[bool]True" Label="[UIModel]290" TabIndex="[int]0" Width="[float]303" p4:ControlDefinitionChecksum="ouzrsUhXDI5ReTSXQIyGEQ==">
 						<p4:p.TypeDefinitionTargets>
 							<p4:TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\.gtype:ControlDefinition" />
 						</p4:p.TypeDefinitionTargets>
@@ -84,17 +84,17 @@
 									<Field1>null</Field1>
 								</Cluster>
 							</p.DefaultElementValue>
-							<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2c95e9c37ef84631875bade9d998c57e" Height="[float]86" Id="293" IsTabStop="[bool]True" Label="[UIModel]304" TabIndex="[int]0" Width="[float]172" p4:ControlDefinitionChecksum="XXctgU2fMyK6q34Yd9KzNg==">
+							<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4841d51bd756441cadf17d474a6cc63f" Height="[float]86" Id="293" IsTabStop="[bool]True" Label="[UIModel]304" TabIndex="[int]0" Width="[float]172" p4:ControlDefinitionChecksum="rmGz3aU8kqHSUPYBLkcRug==">
 								<p4:p.TypeDefinitionTargets>
 									<p4:TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\ Components:Snake\ Head\.gtype:ControlDefinition" />
 								</p4:p.TypeDefinitionTargets>
-								<p4:ArrayViewer ArrayElement="[UIModel]307" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="302" IndexVisibility="[Visibility]Visible" Label="[UIModel]303" Left="[float]8" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{ClusterBinding FieldName=Snake\ Body\ Entities\ Index}" Width="[float]139">
+								<p4:ArrayViewer ArrayElement="[UIModel]313" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="311" IndexVisibility="[Visibility]Visible" Label="[UIModel]312" Left="[float]8" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{ClusterBinding FieldName=Snake\ Body\ Entities\ Index}" Width="[float]139">
 									<p.DefaultElementValue>0</p.DefaultElementValue>
-									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="307" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsReadOnly="[bool]False" Label="[UIModel]308" MinHeight="[float]24" TabIndex="[int]0" ValueFormatter="[string]LV:0" ValueType="[Type]UInt32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-										<p4:Label Height="[float]16" Id="308" IsVisualChild="[bool]False" LabelOwner="[UIModel]307" Left="[float]0" Text="[string]Numeric" Top="[float]-20" Width="[float]45" />
+									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="313" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]314" MinHeight="[float]24" TabIndex="[int]0" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+										<p4:Label Height="[float]16" Id="314" IsVisualChild="[bool]False" LabelOwner="[UIModel]313" Left="[float]61" Text="[string]Numeric" Top="[float]-14" Width="[float]45" />
 									</NumericText>
 								</p4:ArrayViewer>
-								<p4:Label Height="[float]16" Id="303" LabelOwner="[UIModel]302" Left="[float]8" Text="[string]Snake Body Entities Index" Top="[float]10" Width="[float]135" />
+								<p4:Label Height="[float]16" Id="312" LabelOwner="[UIModel]311" Left="[float]8" Text="[string]Snake Body Entities Index" Top="[float]10" Width="[float]135" />
 								<p4:Label Height="[float]16" Id="304" IsVisualChild="[bool]False" LabelOwner="[UIModel]293" Left="[float]0" Text="[string]Snake Head" Top="[float]-20" Width="[float]63" />
 							</p4:Cluster>
 						</p4:ArrayViewer>
@@ -162,51 +162,17 @@
 			</ArrayViewer>
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
-			<DataAccessor Bounds="380 245 40 15" DataItem="48" Id="89" Label="90" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="195 270 40 15" DataItem="48" Id="89" Label="90" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@1729b352ebc44728b2d60d05ea2629a4" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="89" Bounds="299 245 76 14" Id="90" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="89" Bounds="114 270 76 14" Id="90" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>game state in</p.Text>
 			</NodeLabel>
-			<Comment Bounds="960 205 125 55" Id="135" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="1200 205 125 55" Id="135" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"Array of\r\n  Cluster of\r\n    Array of X nums\r\n    Array of Y nums"</p.Text>
 			</Comment>
-			<MethodCall Bounds="500 270 40 40" DomainName="WebVIArcade:Snake:Entity Components" Id="136" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\Entity Components\\Position Get.gvi&quot;" Target="WebVIArcade:Snake:Entity\ Components:Position\ Get\.gvi" xmlns="http://www.ni.com/MocCommon">
-				<p.MethodDeclaration>
-					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L0" Desc="game state in" />
-						<Parameter Id="L1" Desc="entity index" />
-						<Parameter Id="R2" Desc="position" />
-					</MethodDeclaration>
-				</p.MethodDeclaration>
-				<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@1246c662383945fb8816dc877df2c07c" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-			</MethodCall>
-			<MethodCall Bounds="400 280 40 20" DomainName="WebVIArcade:Snake:SubVIs" Id="137" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\SubVIs\\Snake Head Index.gvi&quot;" Target="WebVIArcade:Snake:SubVIs:Snake\ Head\ Index\.gvi" xmlns="http://www.ni.com/MocCommon">
-				<p.MethodDeclaration>
-					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="R0" Desc="Index" />
-					</MethodDeclaration>
-				</p.MethodDeclaration>
-				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-			</MethodCall>
-			<Wire Id="138" Joints="N(89:Value)|(420,250) h(55) v(25) N(136:L0)|(500,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="139" Joints="N(137:R0)|(440,285) N(136:L1)|(500,285)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PropertyNode Bounds="570 290 50 50" HasErrorTerminals="False" Id="158" InstanceDataType="@1246c662383945fb8816dc877df2c07c" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
-				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-					<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\ Components:Position\.gtype" />
-				</p.TypeDefinitionTargets>
-				<PropertyItemTerminal DataType="Int32" Hotspot="50 15" Id="c0t0v" Path="X" PathElementMemberKinds="Field" Usage="Optional" />
-				<PropertyItemTerminal DataType="Int32" Hotspot="50 30" Id="c1t0v" Path="Y" PathElementMemberKinds="Field" Usage="Optional" />
-			</PropertyNode>
-			<Wire Id="159" Joints="N(136:R2)|(540,295) N(158:instance in)|(570,295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<BuildArray Bounds="710 300 40 20" CanToggle="False" Id="160" Terminals="outArray=192, c0t0v=161, c1t0v=210" VerticalChunkCount="2" />
-			<Wire Id="161" Joints="N(158:c0t0v)|(620,305) h(20) v(-2.5) h(5) v(2.5) B(4) N(160:c0t0v)|(710,305) B(4) v(5) N(209:c0t0v)|(655,310)" xmlns="http://www.ni.com/PlatformFramework" />
-			<BuildArray Bounds="710 325 40 20" CanToggle="False" Id="162" Terminals="outArray=193, c0t0v=164, c1t0v=212" VerticalChunkCount="2" />
-			<Wire Id="164" Joints="N(158:c1t0v)|(620,320) h(7) v(10) h(21) B(3) N(162:c0t0v)|(710,330) B(3) v(40) N(208:c0t0v)|(665,370)" xmlns="http://www.ni.com/PlatformFramework" />
-			<BuildArray Bounds="905 290 40 20" CanToggle="False" Id="168" Terminals="outArray=207, c0t0v=194, c1t0v" VerticalChunkCount="2" />
-			<ClusterLiteral Bounds="590 115 180 100" DataType="@f58a3ba764f64f06801a5e51b8de32bf" Id="183" xmlns="http://www.ni.com/MocCommon">
+			<BuildArray Bounds="1145 290 40 20" CanToggle="False" Id="168" Terminals="outArray=207, c0t0v=194, c1t0v" VerticalChunkCount="2" />
+			<ClusterLiteral Bounds="830 115 180 100" DataType="@f58a3ba764f64f06801a5e51b8de32bf" Id="183" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>
 					<Cluster>
 						<Field1>null</Field1>
@@ -239,35 +205,119 @@
 					<p.Text>Y</p.Text>
 				</NodeLabel>
 			</ClusterLiteral>
-			<PropertyNode Bounds="835 290 50 50" HasErrorTerminals="False" Id="190" InstanceDataType="@f58a3ba764f64f06801a5e51b8de32bf" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="1075 290 50 50" HasErrorTerminals="False" Id="190" InstanceDataType="@f58a3ba764f64f06801a5e51b8de32bf" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<PropertyItemTerminal Action="Write" DataType="Int32[]" Hotspot="0 15" Id="c0t0v" Path="X" PathElementMemberKinds="Field" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Int32[]" Hotspot="0 30" Id="c1t0v" Path="Y" PathElementMemberKinds="Field" Usage="Required" />
 			</PropertyNode>
-			<Wire Id="191" Joints="N(183:Out)|(770,120) h(55) v(175) N(190:instance in)|(835,295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="192" Joints="N(160:outArray)|(750,305) N(190:c0t0v)|(835,305)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="193" Joints="N(162:outArray)|(750,330) h(70) v(-10) N(190:c1t0v)|(835,320)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="194" Joints="N(190:instance out)|(885,295) N(168:c0t0v)|(905,295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="975 290 40 15" DataItem="195" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="191" Joints="N(183:Out)|(1010,120) h(55) v(175) N(190:instance in)|(1075,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="194" Joints="N(190:instance out)|(1125,295) N(168:c0t0v)|(1145,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1215 290 40 15" DataItem="195" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@151f9b42b56d400fbf826543a369eeed" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="205" Bounds="1020 290 116 14" Id="206" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="205" Bounds="1260 290 116 14" Id="206" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>game state rendered</p.Text>
 			</NodeLabel>
-			<Wire Id="207" Joints="N(168:outArray)|(945,295) N(205:Value)|(978,295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="665 365 30 30" Id="208" Terminals="o=212, c0t0v=164, c1t0v=215" />
-			<Add Bounds="655 305 30 30" Id="209" Terminals="o=210, c0t0v=161, c1t0v=215" />
-			<Wire Id="210" Joints="N(209:o)|(685,320) h(20) v(-5) N(160:c1t0v)|(710,315)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="212" Joints="N(208:o)|(695,380) h(5) v(-40) N(162:c1t0v)|(710,340)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="510 400 40 15" DataType="Int32" Id="214" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>50</p.Data>
-				<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:0" />
-			</Literal>
-			<Wire Id="215" Joints="N(214:Out)|(550,405) h(81) B(1) h(29) v(-20) N(208:c1t0v)|(665,385) B(1) v(-80) N(209:c1t0v)|(655,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="207" Joints="N(168:outArray)|(1185,295) N(205:Value)|(1218,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="321" Joints="N(89:Value)|(235,275) N(319:instance in)|(250,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<PropertyNode Bounds="250 270 75 35" HasErrorTerminals="False" Id="319" InstanceDataType="@1729b352ebc44728b2d60d05ea2629a4" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Game\ State\.gtype" />
+					<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\.gtype" />
+				</p.TypeDefinitionTargets>
+				<PropertyItemTerminal DataType="@eed2b784baf5470ca7d13235721f361d" Hotspot="75 15" Id="c0t0v" Path="Entities" PathElementMemberKinds="Field" Usage="Optional" />
+			</PropertyNode>
+			<ForLoop Bounds="423 358 511 286" DiagramId="324" Id="323">
+				<LoopIteration Bounds="5 256 15 15" Id="326" />
+				<PropertyNode Bounds="15 75 77 35" HasErrorTerminals="False" Id="329" InstanceDataType="@c115c60ffc304b5ba6d8a44a9409a789" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+						<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\.gtype" />
+						<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\ Components:Position\.gtype" />
+					</p.TypeDefinitionTargets>
+					<PropertyItemTerminal DataType="@b9136dd13c61486d86619c58f743c37d" Hotspot="77 15" Id="c0t0v" Path="Position" PathElementMemberKinds="Field" Usage="Optional" />
+				</PropertyNode>
+				<Wire Id="330" Joints="N(328:i0)|(6,80) N(329:instance in)|(15,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ArraySize Bounds="105 45 40 20" Id="331" />
+				<IsGreaterThan0 Bounds="150 45 30 30" Id="333" />
+				<Wire Id="334" Joints="N(331:size(s\))|(145,60) N(333:x)|(150,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<CaseStructure Bounds="205 15 210 250" Default="336" Id="335" Selected="337" UserSelectorBounds="61 0 88 17">
+					<CaseStructure.Case Bounds="5 5 200 240" Id="336" Pattern="False">
+						<Wire Id="370" Joints="N(363:336)|(4,140) N(368:336)|(196,140)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="379" Joints="N(374:336)|(4,195) N(377:336)|(196,195)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 200 240" Id="337" Pattern="True">
+						<PropertyNode Bounds="60 85 50 50" HasErrorTerminals="False" Id="341" InstanceDataType="@1246c662383945fb8816dc877df2c07c" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="WebVIArcade:Snake:Entity\ Components:Position\.gtype" />
+							</p.TypeDefinitionTargets>
+							<PropertyItemTerminal DataType="Int32" Hotspot="50 15" Id="c0t0v" Path="X" PathElementMemberKinds="Field" Usage="Optional" />
+							<PropertyItemTerminal DataType="Int32" Hotspot="50 30" Id="c1t0v" Path="Y" PathElementMemberKinds="Field" Usage="Optional" />
+						</PropertyNode>
+						<ArrayIndex Bounds="10 65 40 30" Id="344" Terminals="array=346, c0t0v, c0out=347" />
+						<Wire Id="346" Joints="N(345:337)|(4,70) N(344:array)|(10,70)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="347" Joints="N(344:c0out)|(50,90) N(341:instance in)|(60,90)" xmlns="http://www.ni.com/PlatformFramework" />
+						<BuildArray Bounds="150 135 40 20" CanToggle="False" ConcatenateInputs="True" Id="364" Terminals="outArray=367, c0t0v=365, c1t0v=366" VerticalChunkCount="2" />
+						<Wire Id="365" Joints="N(363:337)|(4,140) N(364:c0t0v)|(150,140)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="366" Joints="N(341:c0t0v)|(110,100) h(30) v(50) N(364:c1t0v)|(150,150)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="367" Joints="N(364:outArray)|(190,140) N(368:337)|(196,140)" xmlns="http://www.ni.com/PlatformFramework" />
+						<BuildArray Bounds="150 190 40 20" CanToggle="False" ConcatenateInputs="True" Id="371" Terminals="outArray=376, c0t0v=375, c1t0v=372" VerticalChunkCount="2" />
+						<Wire Id="372" Joints="N(341:c1t0v)|(110,115) h(10) v(90) N(371:c1t0v)|(150,205)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="375" Joints="N(374:337)|(4,195) N(371:c0t0v)|(150,195)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="376" Joints="N(371:outArray)|(190,195) N(377:337)|(196,195)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="338" Terminals="335=339, 336, 337" />
+					<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="345" Terminals="335=343, 336, 337=346" />
+					<CaseStructure.Tunnel Bounds="-4 140 13 10" Docking="Left" Id="363" Terminals="335=362, 336=370, 337=365" />
+					<CaseStructure.Tunnel Bounds="201 140 13 10" Docking="Right" Id="368" Terminals="335=369, 336=370, 337=367" />
+					<CaseStructure.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="374" Terminals="335=373, 336=379, 337=375" />
+					<CaseStructure.Tunnel Bounds="201 195 13 10" Docking="Right" Id="377" Terminals="335=378, 336=379, 337=376" />
+				</CaseStructure>
+				<Wire Id="339" Joints="N(333:x &gt; 0?)|(180,60) N(338:335)|(201,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="343" Joints="N(329:c0t0v)|(92,90) h(8) B(1) N(345:335)|(201,90) B(1) v(-40) N(331:array)|(105,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="362" Joints="N(349:i0)|(6,160) N(363:335)|(201,160)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="369" Joints="N(368:335)|(419,160) N(348:324)|(499,160)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="373" Joints="N(360:i0)|(6,215) N(374:335)|(201,215)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="378" Joints="N(377:335)|(419,215) N(361:324)|(499,215)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="325" Terminals="323, 324" />
+				<LoopTunnel AutoIndex="True" Bounds="-5 77 13 10" Docking="Left" Id="328" Terminals="o0=327, i0=330" TunnelMode="0" />
+				<RightShiftRegister Bounds="501 157 13 10" Docking="Right" Id="348" Terminals="323=380, 324=369" />
+				<LeftShiftRegister Bounds="-5 157 13 10" Docking="Left" Id="349" RightRegister="348" Terminals="o0=353, i0=362" />
+				<LeftShiftRegister Bounds="-5 212 13 10" Docking="Left" Id="360" RightRegister="361" Terminals="o0=357, i0=373" />
+				<RightShiftRegister Bounds="501 212 13 10" Docking="Right" Id="361" Terminals="323=381, 324=378" />
+			</ForLoop>
+			<Wire Id="327" Joints="N(319:c0t0v)|(325,285) h(5) v(155) N(328:o0)|(418,440)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayLiteral Bounds="255 515 103 25" DataType="Int32[]" Id="350" Label="352" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="49 4 40 15" DataType="Int32" Id="351">
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="350" Bounds="255 498 10 14" Id="352" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>X</p.Text>
+			</NodeLabel>
+			<Wire Id="353" Joints="N(350:Out)|(358,520) N(349:o0)|(418,520)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayLiteral Bounds="250 570 103 25" DataType="Int32[]" Id="354" Label="356" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="49 4 40 15" DataType="Int32" Id="355">
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="354" Bounds="250 553 10 14" Id="356" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Y</p.Text>
+			</NodeLabel>
+			<Wire Id="357" Joints="N(354:Out)|(353,575) N(360:o0)|(418,575)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="380" Joints="N(348:323)|(937,520) h(38) v(-215) N(190:c0t0v)|(1075,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="381" Joints="N(361:323)|(937,575) h(133) v(-255) N(190:c1t0v)|(1075,320)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
 		</NativeFrontPanel>
-		<DataItem CallDirection="Input" CallIndex="0" DataType="@4597d6c396c0470097404ce30e84df81" Id="48" Name="game state in" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="0" DataType="@1729b352ebc44728b2d60d05ea2629a4" Id="48" Name="game state in" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0_0_</Field1>
@@ -283,15 +333,15 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="4597d6c396c0470097404ce30e84df81">
-			<Attributed AttributedType="@731689c493a048d98af2087e0939e8aa">
+		<p.TypeReference TypeId="1729b352ebc44728b2d60d05ea2629a4">
+			<Attributed AttributedType="@650fcf85debb4178a5010c129c05b850">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="97319663fc254274b66b5d394ae782f5">
-			<Attributed AttributedType="@cfa5efd0dedf4784aec52773120be127">
+		<p.TypeReference TypeId="c115c60ffc304b5ba6d8a44a9409a789">
+			<Attributed AttributedType="@630ef8ea1cef4fad9f9059c83a5379fb">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake" />
 				</AttributeValues>
@@ -304,8 +354,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="2c95e9c37ef84631875bade9d998c57e">
-			<Attributed AttributedType="@d38ab35b6f844a1c8736e5d4f61c7968">
+		<p.TypeReference TypeId="4841d51bd756441cadf17d474a6cc63f">
+			<Attributed AttributedType="@5f06f7e466444709ae2992bfec0fd49c">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
@@ -330,34 +380,40 @@
 		<p.TypeReference TypeId="151f9b42b56d400fbf826543a369eeed">
 			<VariableArray DereferenceType="@f58a3ba764f64f06801a5e51b8de32bf" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="731689c493a048d98af2087e0939e8aa">
-			<Typedef TypedefName="Game State.gtype" UnderlyingType="@cc142384eefa42ce89672fa992da7551" />
+		<p.TypeReference TypeId="eed2b784baf5470ca7d13235721f361d">
+			<VariableArray DereferenceType="@c115c60ffc304b5ba6d8a44a9409a789" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="cfa5efd0dedf4784aec52773120be127">
-			<Typedef TypedefName="Entity.gtype" UnderlyingType="@a986917487824ec3922e499322f791d2" />
+		<p.TypeReference TypeId="b9136dd13c61486d86619c58f743c37d">
+			<VariableArray DereferenceType="@1246c662383945fb8816dc877df2c07c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="650fcf85debb4178a5010c129c05b850">
+			<Typedef TypedefName="Game State.gtype" UnderlyingType="@6fd877f219814534a19335958f1be36f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="630ef8ea1cef4fad9f9059c83a5379fb">
+			<Typedef TypedefName="Entity.gtype" UnderlyingType="@82c01f9ad47b4e53b7b4af12c57732ed" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="6ed59168d59240a3b6657fc20600957c">
 			<Typedef TypedefName="Position.gtype" UnderlyingType="@c60bb2c6365b4a668bc2e5ddb3b8b3ca" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="d38ab35b6f844a1c8736e5d4f61c7968">
-			<Typedef TypedefName="Snake Head.gtype" UnderlyingType="@13ca126d00814b8ca7a22417a489a5c6" />
+		<p.TypeReference TypeId="5f06f7e466444709ae2992bfec0fd49c">
+			<Typedef TypedefName="Snake Head.gtype" UnderlyingType="@ae9a4418c6bf427b91b06c3b38542464" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="cc142384eefa42ce89672fa992da7551">
+		<p.TypeReference TypeId="6fd877f219814534a19335958f1be36f">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="World Size" DataType="@ec87cfc60bdb42a48f247b36b537654d" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Entities" DataType="@0e48dcfb96d043fda52bc02ae423e959" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Entities" DataType="@eed2b784baf5470ca7d13235721f361d" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a986917487824ec3922e499322f791d2">
+		<p.TypeReference TypeId="82c01f9ad47b4e53b7b4af12c57732ed">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Direction" DataType="@69e8d97fd00a4652a480bb7f6d369feb" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Edible" DataType="@89d66ba0b2a14489bde110ade06475ee" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Position" DataType="@b9136dd13c61486d86619c58f743c37d" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Snake Body" DataType="@8bb65942b05941e3bd5968edc339a3bd" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Snake Head" DataType="@ac2f04245cdd42bfb504a40819e2d855" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Snake Head" DataType="@48569273255e4a61ad27504610b17b60" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -369,15 +425,12 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="13ca126d00814b8ca7a22417a489a5c6">
+		<p.TypeReference TypeId="ae9a4418c6bf427b91b06c3b38542464">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Snake Body Entities Index" DataType="UInt32[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Snake Body Entities Index" DataType="Int32[]" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="0e48dcfb96d043fda52bc02ae423e959">
-			<VariableArray DereferenceType="@97319663fc254274b66b5d394ae782f5" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="69e8d97fd00a4652a480bb7f6d369feb">
 			<VariableArray DereferenceType="@3d590952d6154b54bdbd085d6452ed12" />
@@ -385,14 +438,11 @@
 		<p.TypeReference TypeId="89d66ba0b2a14489bde110ade06475ee">
 			<VariableArray DereferenceType="@05e1c9e417f540888873c20c9e20d809" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="b9136dd13c61486d86619c58f743c37d">
-			<VariableArray DereferenceType="@1246c662383945fb8816dc877df2c07c" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="8bb65942b05941e3bd5968edc339a3bd">
 			<VariableArray DereferenceType="@ee94f010050d49399eb2268c14eee30a" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="ac2f04245cdd42bfb504a40819e2d855">
-			<VariableArray DereferenceType="@2c95e9c37ef84631875bade9d998c57e" />
+		<p.TypeReference TypeId="48569273255e4a61ad27504610b17b60">
+			<VariableArray DereferenceType="@4841d51bd756441cadf17d474a6cc63f" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="3d590952d6154b54bdbd085d6452ed12">
 			<Attributed AttributedType="@367b21a4ba224699ad4c3a789bee737f">
@@ -440,42 +490,4 @@
 			</Enumeration>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
-	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="WebVIArcade:Snake:Entity\ Components:Position\ Get\.gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 40 40">
-						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
-								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								<FileNameText Attached="[bool]False" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Position&#xD;&#xA;Get" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
-									<FontSetting FontFamily="Verdana" FontSize="6.75" />
-								</FileNameText>
-							</IconTemplate>
-							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]WebVIArcade.gcomp" Top="[float]0" Width="[float]40" />
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-		<p.IconModel Target="WebVIArcade:Snake:SubVIs:Snake\ Head\ Index\.gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 40 20">
-						<IconPanel Height="[float]20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]20" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
-								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								<FileNameText Attached="[bool]False" Height="[float]16" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]🐍😃📍" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
-									<FontSetting FontFamily="Verdana" FontSize="7.5" />
-								</FileNameText>
-							</IconTemplate>
-							<IconTemplate Height="[float]20" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]WebVIArcade.gcomp" Top="[float]0" Width="[float]40" />
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-	</IconTable>
 </SourceFile>
