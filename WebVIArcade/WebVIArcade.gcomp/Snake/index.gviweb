@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8A76D76F49EC41041D3603EB81DEB984" Timestamp="1D448C9C0633D6F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="05F4EB8FFA7B84AF8970E2DA9A152D80" Timestamp="1D44CB7897384B9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.3.1.49938" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -68,15 +68,15 @@
 					<p.Text>stop</p.Text>
 				</NodeLabel>
 				<Wire Id="84" Joints="N(82:Out)|(610,310) N(50:Input)|(640,310)" xmlns="http://www.ni.com/PlatformFramework" />
-				<MethodCall Bounds="65 190 40 40" DomainName="WebVIArcade:Snake:SubVIs" Id="90" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\SubVIs\\Snake Move System.gvi&quot;" Target="WebVIArcade:Snake:SubVIs:Snake\ Move\ System\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="65 190 40 40" DomainName="WebVIArcade:Snake:Systems" Id="90" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\Systems\\Snake Move System.gvi&quot;" Target="WebVIArcade:Snake:Systems:Snake\ Move\ System\.gvi" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="game state in" />
 							<Parameter Id="R0" Desc="game state out" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
-					<Terminal DataType="@41b60a4e24f14be99967312eaaa50607" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="@41b60a4e24f14be99967312eaaa50607" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
 				<Wire Id="91" Joints="N(89:i0)|(4,195) N(90:L0)|(65,195)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wait Bounds="85 10 40 40" Id="92" />
@@ -88,19 +88,19 @@
 					<p.Text>milliseconds to wait</p.Text>
 				</NodeLabel>
 				<Wire Id="95" Joints="N(93:Out)|(75,30) N(92:time to wait)|(85,30)" xmlns="http://www.ni.com/PlatformFramework" />
-				<MethodCall Bounds="170 225 40 40" DomainName="WebVIArcade:Snake:SubVIs" Id="159" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\SubVIs\\Render System.gvi&quot;" Target="WebVIArcade:Snake:SubVIs:Render\ System\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="170 225 40 40" DomainName="WebVIArcade:Snake:Systems" Id="159" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\Systems\\Render System.gvi&quot;" Target="WebVIArcade:Snake:Systems:Render\ System\.gvi" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="game state in" />
 							<Parameter Id="R0" Desc="game state rendered" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
-					<Terminal DataType="@41b60a4e24f14be99967312eaaa50607" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@151f9b42b56d400fbf826543a369eeed" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
 				<Wire Id="160" Joints="N(90:R0)|(105,195) h(60) B(1) N(88:48)|(656,195) B(1) v(35) N(159:L0)|(170,230)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="166" Joints="N(159:R0)|(210,230) h(30) B(1) N(44:Value)|(298,230) B(1) v(40) N(167:array)|(245,270)" xmlns="http://www.ni.com/PlatformFramework" />
-				<ArrayIndex Bounds="245 265 40 30" Id="167" Terminals="array=166, c0t0v, c0out=170" />
+				<ArrayIndex Bounds="245 265 40 30" Id="167" Terminals="array=166, c0t0v=188, c0out=170" />
 				<PropertyNode Bounds="330 295 50 50" HasErrorTerminals="False" Id="169" InstanceDataType="@f58a3ba764f64f06801a5e51b8de32bf" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 					<PropertyItemTerminal DataType="Int32[]" Hotspot="50 15" Id="c0t0v" Path="X" PathElementMemberKinds="Field" Usage="Optional" />
 					<PropertyItemTerminal DataType="Int32[]" Hotspot="50 30" Id="c1t0v" Path="Y" PathElementMemberKinds="Field" Usage="Optional" />
@@ -120,16 +120,25 @@
 					<p.Text>Y</p.Text>
 				</NodeLabel>
 				<Wire Id="184" Joints="N(169:c1t0v)|(380,325) N(182:Value)|(453,325)" xmlns="http://www.ni.com/PlatformFramework" />
+				<MethodCall Bounds="195 285 40 20" DomainName="WebVIArcade:Snake:SubVIs" Id="187" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\SubVIs\\Snake Head Index.gvi&quot;" Target="WebVIArcade:Snake:SubVIs:Snake\ Head\ Index\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="R0" Desc="Index" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<Wire Id="188" Joints="N(187:R0)|(235,290) N(167:c0t0v)|(245,290)" xmlns="http://www.ni.com/PlatformFramework" />
 				<RightShiftRegister Bounds="661 195 13 10" Docking="Right" Id="88" Terminals="47, 48=160" />
 				<LeftShiftRegister Bounds="-4 195 13 10" Docking="Left" Id="89" RightRegister="88" Terminals="o0=86, i0=91" />
 			</WhileLoop>
-			<MethodCall Bounds="100 545 40 40" DomainName="WebVIArcade:Snake:SubVIs" Id="85" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\SubVIs\\Initialize.gvi&quot;" Target="WebVIArcade:Snake:SubVIs:Initialize\.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="100 545 40 40" DomainName="WebVIArcade:Snake:Systems" Id="85" ResolveFailedHint="&quot;C:\\dev\\Github\\webvi-arcade\\WebVIArcade\\WebVIArcade.gcomp\\Snake\\Systems\\Initialization System.gvi&quot;" Target="WebVIArcade:Snake:Systems:Initialization\ System\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="R0" Desc="game state out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
-				<Terminal DataType="@41b60a4e24f14be99967312eaaa50607" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@4597d6c396c0470097404ce30e84df81" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 			<Wire Id="86" Joints="N(85:R0)|(140,550) N(89:o0)|(156,550)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
@@ -202,10 +211,10 @@
 		<p.TypeReference TypeId="151f9b42b56d400fbf826543a369eeed">
 			<VariableArray DereferenceType="@f58a3ba764f64f06801a5e51b8de32bf" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="41b60a4e24f14be99967312eaaa50607">
-			<Attributed AttributedType="@a26e31e774a343618cfd2ae492ad9c4b">
+		<p.TypeReference TypeId="4597d6c396c0470097404ce30e84df81">
+			<Attributed AttributedType="@731689c493a048d98af2087e0939e8aa">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Game\ State" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -217,14 +226,14 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a26e31e774a343618cfd2ae492ad9c4b">
-			<Typedef TypedefName="Game State.gtype" UnderlyingType="@2e66868c1e4f4244845236a21decb972" />
+		<p.TypeReference TypeId="731689c493a048d98af2087e0939e8aa">
+			<Typedef TypedefName="Game State.gtype" UnderlyingType="@cc142384eefa42ce89672fa992da7551" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="2e66868c1e4f4244845236a21decb972">
+		<p.TypeReference TypeId="cc142384eefa42ce89672fa992da7551">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="World Size" DataType="@ec87cfc60bdb42a48f247b36b537654d" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Entities" DataType="@3c523983a7524f368758d00c45c3bb01" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Entities" DataType="@0e48dcfb96d043fda52bc02ae423e959" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -236,77 +245,77 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="3c523983a7524f368758d00c45c3bb01">
-			<VariableArray DereferenceType="@b701b24dd2b74cb98fc92b32d3a42b7b" />
+		<p.TypeReference TypeId="0e48dcfb96d043fda52bc02ae423e959">
+			<VariableArray DereferenceType="@97319663fc254274b66b5d394ae782f5" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="b701b24dd2b74cb98fc92b32d3a42b7b">
-			<Attributed AttributedType="@fec853d05a32421f9cc8e1489c2c9242">
+		<p.TypeReference TypeId="97319663fc254274b66b5d394ae782f5">
+			<Attributed AttributedType="@cfa5efd0dedf4784aec52773120be127">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Game\ State" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="fec853d05a32421f9cc8e1489c2c9242">
-			<Typedef TypedefName="Entity.gtype" UnderlyingType="@890b859aa58048dc9675c83f35180384" />
+		<p.TypeReference TypeId="cfa5efd0dedf4784aec52773120be127">
+			<Typedef TypedefName="Entity.gtype" UnderlyingType="@a986917487824ec3922e499322f791d2" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="890b859aa58048dc9675c83f35180384">
+		<p.TypeReference TypeId="a986917487824ec3922e499322f791d2">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Direction" DataType="@427da03305c94654b5624bea1523a3a5" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Edible" DataType="@9ab87f6fcc0c4098a6a0972dbf0c3055" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Position" DataType="@bd9c20a17f0745689dcad825927960b9" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Snake Body" DataType="@ea5b0875b7e34aec84a8388b784d7ef4" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Snake Head" DataType="@010234313967483fb5ed04ca75c1b179" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Direction" DataType="@69e8d97fd00a4652a480bb7f6d369feb" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Edible" DataType="@89d66ba0b2a14489bde110ade06475ee" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Position" DataType="@b9136dd13c61486d86619c58f743c37d" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Snake Body" DataType="@8bb65942b05941e3bd5968edc339a3bd" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Snake Head" DataType="@ac2f04245cdd42bfb504a40819e2d855" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="427da03305c94654b5624bea1523a3a5">
-			<VariableArray DereferenceType="@9204c322fef841bea2c0ed7f672085b3" />
+		<p.TypeReference TypeId="69e8d97fd00a4652a480bb7f6d369feb">
+			<VariableArray DereferenceType="@3d590952d6154b54bdbd085d6452ed12" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="9ab87f6fcc0c4098a6a0972dbf0c3055">
-			<VariableArray DereferenceType="@5d65c272c8fd40e1b307e708e52381e5" />
+		<p.TypeReference TypeId="89d66ba0b2a14489bde110ade06475ee">
+			<VariableArray DereferenceType="@05e1c9e417f540888873c20c9e20d809" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="bd9c20a17f0745689dcad825927960b9">
-			<VariableArray DereferenceType="@6d24d48c9e2647b4998b446274ea04cc" />
+		<p.TypeReference TypeId="b9136dd13c61486d86619c58f743c37d">
+			<VariableArray DereferenceType="@1246c662383945fb8816dc877df2c07c" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="ea5b0875b7e34aec84a8388b784d7ef4">
-			<VariableArray DereferenceType="@a0f8e29974a0452daaa9d1e7db30daa0" />
+		<p.TypeReference TypeId="8bb65942b05941e3bd5968edc339a3bd">
+			<VariableArray DereferenceType="@ee94f010050d49399eb2268c14eee30a" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="010234313967483fb5ed04ca75c1b179">
-			<VariableArray DereferenceType="@95101297ad8249279164726351fbb8ca" />
+		<p.TypeReference TypeId="ac2f04245cdd42bfb504a40819e2d855">
+			<VariableArray DereferenceType="@2c95e9c37ef84631875bade9d998c57e" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="9204c322fef841bea2c0ed7f672085b3">
+		<p.TypeReference TypeId="3d590952d6154b54bdbd085d6452ed12">
 			<Attributed AttributedType="@367b21a4ba224699ad4c3a789bee737f">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Entity\ Components" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5d65c272c8fd40e1b307e708e52381e5">
+		<p.TypeReference TypeId="05e1c9e417f540888873c20c9e20d809">
 			<Attributed AttributedType="@45b5d601469b49cbbf2ab30b00b42ffa">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Entity\ Components" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6d24d48c9e2647b4998b446274ea04cc">
+		<p.TypeReference TypeId="1246c662383945fb8816dc877df2c07c">
 			<Attributed AttributedType="@6ed59168d59240a3b6657fc20600957c">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Entity\ Components" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a0f8e29974a0452daaa9d1e7db30daa0">
+		<p.TypeReference TypeId="ee94f010050d49399eb2268c14eee30a">
 			<Attributed AttributedType="@c4f7c40429d5428e90ebb9dc5fdaaaa0">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Entity\ Components" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="95101297ad8249279164726351fbb8ca">
+		<p.TypeReference TypeId="2c95e9c37ef84631875bade9d998c57e">
 			<Attributed AttributedType="@d38ab35b6f844a1c8736e5d4f61c7968">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:SubVIs:Entity\ Components" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]WebVIArcade:Snake:Entity\ Components" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -357,7 +366,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="WebVIArcade:Snake:SubVIs:Snake\ Move\ System\.gvi">
+		<p.IconModel Target="WebVIArcade:Snake:Systems:Snake\ Move\ System\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -375,7 +384,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="WebVIArcade:Snake:SubVIs:Render\ System\.gvi">
+		<p.IconModel Target="WebVIArcade:Snake:Systems:Render\ System\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -393,7 +402,25 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="WebVIArcade:Snake:SubVIs:Initialize\.gvi">
+		<p.IconModel Target="WebVIArcade:Snake:SubVIs:Snake\ Head\ Index\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 20">
+						<IconPanel Height="[float]20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]20" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]False" Height="[float]16" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]🐍😃📍" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="7.5" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]20" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]WebVIArcade.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="WebVIArcade:Snake:Systems:Initialization\ System\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -401,7 +428,7 @@
 							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Initialize" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Initialization System" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 									<FontSetting FontFamily="Verdana" FontSize="6" />
 								</FileNameText>
 							</IconTemplate>
