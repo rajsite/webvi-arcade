@@ -1,4 +1,7 @@
-# WebVI Arcade
+# Archived
+The contents of this repo have moved to https://github.com/rajsite/webvi-experiments
+
+## WebVI Arcade
 
 ## Reflex Tester - [https://bit.ly/webvidemo1](https://bit.ly/webvidemo1)
 
